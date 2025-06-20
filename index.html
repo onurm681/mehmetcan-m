@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mehmetcan Özel Site</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Mehmetcan Özel Site</h1>
+    <button id="destekBtn">Destek İste</button>
+  </header>
+
+  <div id="destekForm" class="form-container" style="display: none;">
+    <h2>Destek Formu</h2>
+    <form id="destekFormu">
+      <label for="departman">Departman Seçin:</label>
+      <select id="departman" name="departman">
+        <option value="Kızla mesajlaşmam tıkandı napacam?">Kızla mesajlaşmam tıkandı napacam?</option>
+        <option value="Hediye ne alayım sence?">Hediye ne alayım sence?</option>
+        <option value="Son durumlar hakkında konuşmak istiyorum.">Son durumlar hakkında konuşmak istiyorum.</option>
+      </select><br/><br/>
+
+      <label for="saat">Saat Aralığı:</label>
+      <input type="text" id="saat" name="saat" placeholder="22:00 - 23:00"><br/><br/>
+
+      <label for="isim">Flört/Sevgili/Ex İsmi:</label>
+      <input type="text" id="isim" name="isim" placeholder="Örnek: Naz, Beril"><br/><br/>
+
+      <button type="submit">Gönder</button>
+    </form>
+    <button id="kapamaBtn">Formu Kapat</button>
+  </div>
+
+  <main>
+    <section id="mesaj"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
